@@ -22,4 +22,6 @@
 
 **2.** Create a New Virtual Machine 代表建立一台虛擬電腦(**選擇這個**)、Open a Virtual Machine 代表已經存在的虛擬電腦、Connect to a Remote Server 代表連到遠端VMware伺服器。<br>
 **3.** 選擇 Typical (recommended)。 <br>
-**4.** 在 Installer disc image file (iso) 這個選項中找到剛剛下載的 ubuntu-22.04.5-desktop-amd64.iso 並選取。
+**4.** 在 Installer disc image file (iso) 這個選項中找到剛剛下載的 ubuntu-22.04.5-desktop-amd64.iso 並選取。<br>
+**5.** 在 Name the Virtual Machine 的地方，確定名稱及位置都正確，位置建議保持預設。<br>
+**6.** 接下來是 Specify Disk Capacity ，設定要分配多少硬碟空間，根據自身電腦的配備決定，
