@@ -10,4 +10,10 @@
 ---
 
 這是VMware的安裝檔： ![VMware 安裝檔](Images/VM_installation.png)
+
 這是VMware安裝成功的畫面： ![VMware 虛擬電腦畫面](Images/VM_installation2.png)
+
+---
+
+## 第二步：下載Ubuntu
+**1.** Create a New Virtual Machine 代表建立一台虛擬電腦(**選擇這個**)、Open a Virtual Machine 代表已經存在的虛擬電腦、Connect to a Remote Server 代表連到遠端VMware伺服器。
