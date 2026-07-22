@@ -26,8 +26,8 @@
 **5.** 在 Name the Virtual Machine 的地方，確定名稱及位置都正確，位置建議保持預設。<br>
 **6.** 接下來是 Specify Disk Capacity ，設定要分配多少硬碟空間，根據自身電腦的配備決定，我使用預設的20GB。<br>
 
-Specify Disk Capacity 的介面：![Ubuntu 硬碟空間分配](Images/Specify_Disk_Capacity.png)
+Specify Disk Capacity 的介面：<br>![Ubuntu 硬碟空間分配](Images/Specify_Disk_Capacity.png)
 
-**7.** 在 Ready to Create Virtual Machine 的部分調整記憶體、CPU，我使用 **Number of processors：1** 、 **Number of cores per processor：4** 。
+**7.** 在 Ready to Create Virtual Machine 的部分調整記憶體、CPU，我使用 **Number of processors：1** 、 **Number of cores per processor：4** 。<br>
 
-Ready to Create Virtual Machine 的 CPU 設定：![VMware CPU分配](Images/V.png)
+Ready to Create Virtual Machine 的 CPU 設定：<br>![VMware CPU分配](Images/Ready_to_Create_Virtual_Machine.png)
