@@ -6,6 +6,8 @@
 **3.** 進入安裝畫面後按 Next 就好。<br>
 **4.** 勾選接受授權條款。<br>
 **5.** 安裝位置維持預設即可。<br>
+
 ---
+
 這是VMware的安裝檔： ![VMware 安裝檔](Images/VM_installation.png)
 
