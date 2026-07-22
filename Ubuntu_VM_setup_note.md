@@ -34,4 +34,4 @@ Ready to Create Virtual Machine 的 CPU 設定：<br>![VMware CPU分配](Images/
 
 **8.** keybordlayout 選擇預設，剩下都按 Next 直至出現電腦畫面就代表安裝成功了。<br>
 
-安裝成功的畫面：<br>![Ubuntu 安裝成功畫面](Images/)
+安裝成功的畫面：<br>![Ubuntu 安裝成功畫面](Images/Ubuntu_installaion.png)
