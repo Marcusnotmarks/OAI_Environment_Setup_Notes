@@ -18,5 +18,7 @@
 ## 第二步：下載Ubuntu
 **1.** 先下載 Ubuntu 22.04 LTS Desktop ISO，[下載連結](https://ubuntu.com/download/desktop?utm_source=chatgpt.com)<br>
 
+這是下載好後的正確檔名： ![VMware 安裝檔](Ubuntu_disc.png)
+
 **2.** Create a New Virtual Machine 代表建立一台虛擬電腦(**選擇這個**)、Open a Virtual Machine 代表已經存在的虛擬電腦、Connect to a Remote Server 代表連到遠端VMware伺服器。<br>
 **3.** 選擇 Typical (recommended) <br>
