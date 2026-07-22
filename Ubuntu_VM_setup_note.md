@@ -10,4 +10,4 @@
 ---
 
 這是VMware的安裝檔： ![VMware 安裝檔](Images/VM_installation.png)
-
+這是VMware安裝成功的畫面： ![VMware 虛擬電腦畫面](Images/VM_installation2.png)
