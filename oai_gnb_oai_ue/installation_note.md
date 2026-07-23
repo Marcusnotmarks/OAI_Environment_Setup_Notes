@@ -44,3 +44,4 @@ Codename:       jammy
 **1.** 輸入 `source oaienv` 。<br>
 **2.** 進入建置目錄 `cd cmake_targets` ，輸入 pwd 確認。<br> ![Git 編譯](../Images/oai_setup_4.png)
 
+**3.** 安裝所有依賴，輸入 `./build_oai -I --install-optional-packages` 安裝 gcc 、cmake 、 ASN1 Compiler 、 UHD 、 Wireshark 、 libsctp 、 library。 <br> ![Git 安裝](../Images/oai_setup_5.png)
