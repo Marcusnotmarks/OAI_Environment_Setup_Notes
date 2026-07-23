@@ -9,4 +9,7 @@
 ## OAI環境建立紀錄
 
 ### 1.確認 Ubuntu 版本
-在終端機輸入`lsb_release -a`確認版本是否正確：
+在終端機輸入`lsb_release -a`確認版本是否正確。<br>
+
+確定是 22.04.x LTS：
+![Oai 版本](Images/oai_setup_1.png)
