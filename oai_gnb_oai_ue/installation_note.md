@@ -24,3 +24,13 @@ Codename:       jammy
 
 ### 3.安裝 Git
 在終端機輸入`sudo apt install -y git`，安裝完後輸入`git --version`，確定版本是否是`git version 2.34.1`。
+
+### 4.Git 的 Clone 和 pull
+**1.** 輸入`git clone https://github.com/OPENAIRINTERFACE/openairinterface5g.git`。<br>
+**2.** 輸入`cd openairinterface5g`。<br>
+**3.** 輸入`git checkout develop`。<br>
+**4.** 輸入`git pull origin develop`。<br> ![安裝Git](../Images/oai_setup_3.png)
+
+
+
+
