@@ -54,3 +54,21 @@ gNB 與 NR-UE 編譯成功：<br> ![gNB 編譯成功](../Images/oai_setup_6.png)
 
 **2.** 輸入 `cd ~/openairinterface5g/cmake_targets/ran_build/build` ，並輸入 `ls` 確認是否有 `nr-softmodem nr-uesoftmodem` 這兩行程式。<br>
 結果：<br> ![編譯成功結果](../Images/oai_setup_7.png)
+
+---
+
+### 7.啟動
+**1.** 確定設定檔輸入：
+
+```bash
+cd ~/openairinterface5g
+find . -name "cu_gnb.conf"
+find . -name "du_gnb.conf"
+find . -name "ue.conf"
+```
+
+
+
+
+
+
