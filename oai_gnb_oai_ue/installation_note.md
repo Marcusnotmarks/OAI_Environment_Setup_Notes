@@ -21,3 +21,6 @@ Codename:       jammy
 ```
 ### 2.更新基本套件
 在終端機輸入`sudo apt update`更新基本套件。<br> ![確認 Ubuntu 版本](../Images/oai_seup_2.png)
+
+### 3.安裝 Git
+在終端機輸入`sudo apt install -y git`，安裝完後輸入`git --version`，確定版本是否是`git version 2.34.1`。
