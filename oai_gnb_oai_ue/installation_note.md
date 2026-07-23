@@ -51,3 +51,6 @@ Codename:       jammy
 ### 6.編譯 gNB 與 NR-UE
 **1.** 編譯 OAI 的 gNB 與 NR-UE，產生後續執行模擬所需的可執行檔，輸入 `./build_oai --gNB --nrUE` 。<br>
 gNB 與 NR-UE 編譯成功：<br> ![gNB 編譯成功](../Images/oai_setup_6.png)
+
+**2.** 輸入 `cd ~/openairinterface5g/cmake_targets/ran_build/build` ，並輸入 `ls` 確認是否有 `nr-softmodem nr-uesoftmodem` 這兩行程式。<br>
+結果：<br> ![編譯成功結果](../Images/oai_setup_7.png)
