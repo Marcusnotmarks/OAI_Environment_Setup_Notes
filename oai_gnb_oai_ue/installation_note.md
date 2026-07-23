@@ -74,7 +74,7 @@ find . -name "ue.conf"
 ./targets/PROJECTS/GENERIC-NR-5GC/CONF/ue.conf
 ```
 
-**2.** 輸入這個路徑 `cd cmake_targets/ran_build/build` ，接著輸入 `pwd` 以及 `ls` 。<br>
+**2.** 輸入這個路徑 `cd cmake_targets/ran_build/build` ，接著輸入 `pwd` 以及 `ls` ，可以看到以下結果：<br> ![結果](../Images/oai_setup_8.png)
 
 
 
