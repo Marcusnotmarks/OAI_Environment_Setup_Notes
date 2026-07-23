@@ -20,4 +20,4 @@ Release:        22.04
 Codename:       jammy
 ```
 ### 2.更新基本套件
-在終端機輸入`sudo apt update`更新基本套件。<br> ![確認 Ubuntu 版本](Images/oai_seup_2.png)
+在終端機輸入`sudo apt update`更新基本套件。<br> ![確認 Ubuntu 版本](../Images/oai_seup_2.png)
