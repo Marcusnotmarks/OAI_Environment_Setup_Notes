@@ -83,7 +83,7 @@ sudo apt update
 sudo apt install gh
 ```
 
-**2.** 輸入 `gh auth login` 後會遇到 4 個問題，依序選擇 `GitHub.com` 、 `HTTPS` 、 `Yes` 、 `Login with a web browser` 會顯示8位密碼後 *65D0-59EC*，接著會跳轉到網頁版，繼續 GitHub 登入步驟，輸入剛剛取得的8位密碼候選 Authorize GitHub CLI 。<br> ![登入成功結果](../Images/oai_setup_10.png)
+**2.** 輸入 `gh auth login` 後會遇到 4 個問題，依序選擇 `GitHub.com` 、 `HTTPS` 、 `Yes` 、 `Login with a web browser` 會顯示8位密碼後 *65D0-59EC*，接著會跳轉到網頁版，繼續 GitHub 登入步驟，輸入剛剛取得的8位密碼候選 Authorize GitHub CLI 。<br> ![登入成功結果](../Images/oai_set_up_10.png)
 
 
 **3.** 輸入以下程式並 clone：
