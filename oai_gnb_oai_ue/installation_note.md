@@ -73,7 +73,8 @@ find . -name "ue.conf"
 
 **4.** 輸入這個路徑 `cd cmake_targets/ran_build/build` ，接著輸入 `pwd` 以及 `ls` ，可以看到以下結果：<br> ![結果](../Images/oai_setup_8.png)
 
+---
 
-
-
+### 7.啟動與執行
+**1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。
 
