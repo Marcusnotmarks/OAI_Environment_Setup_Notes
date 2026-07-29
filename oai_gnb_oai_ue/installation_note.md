@@ -75,6 +75,31 @@ find . -name "ue.conf"
 
 ---
 
-### 7.啟動與執行
+### 7.設定檔(CU/DU/UE)
+**1.** 用 GitHub CLI 取得密碼，執行以下程式：<br>
+
+```bash
+sudo apt update
+sudo apt install gh
+```
+
+**2.** 輸入 `gh auth login` 後會遇到 4 個問題，依序選擇 `GitHub.com` 、 `HTTPS` 、 `Yes` 、 `Login with a web browser` 會顯示8位密碼後 *65D0-59EC*，接著會跳轉到網頁版，繼續 GitHub 登入步驟，輸入剛剛取得的8位密碼候選 Authorize GitHub CLI 。<br> ![登入成功結果](../Images/oai_setup_10.png)
+
+
+**3.** 輸入以下程式並 clone：
+
+```bash
+cd ~
+git clone https://github.com/bmw-ece-ntust/5g-nr-rfsim-guides.git
+```
+下載完後輸入 `ls ~/5g-nr-rfsim-guides/oai_gnb_oai_ue/config` 確認是否有檔案：
+
+```bash
+cu_gnb.conf
+du_gnb.conf
+ue.conf
+```
+
+### 8.啟動與執行
 **1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。
 
