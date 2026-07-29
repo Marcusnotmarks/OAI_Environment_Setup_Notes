@@ -92,7 +92,7 @@ sudo apt install gh
 cd ~
 git clone https://github.com/bmw-ece-ntust/5g-nr-rfsim-guides.git
 ```
-![登入成功結果](../Images/oai_setup_9.png)
+![登入成功結果](../Images/oai_setup_9.png) <br>
 下載完後輸入 `ls ~/5g-nr-rfsim-guides/oai_gnb_oai_ue/config` 確認是否有檔案：
 
 ```bash
