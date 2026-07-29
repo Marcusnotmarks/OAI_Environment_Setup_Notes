@@ -105,3 +105,15 @@ ue.conf
 **1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。<br>
 
 **2.** 啟動 CU 並載入對應的 CU 設定檔 `sudo ./nr-softmodem --rfsim -O /home/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf` 。<br>
+
+
+
+
+
+
+
+
+
+### 99.遇到的問題
+**1.** clone設定檔的時候遇到 Ubuntu 無法連上網路，以下是修復的步驟：
+
