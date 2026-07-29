@@ -92,6 +92,7 @@ sudo apt install gh
 cd ~
 git clone https://github.com/bmw-ece-ntust/5g-nr-rfsim-guides.git
 ```
+![登入成功結果](../Images/oai_setup_9.png)
 下載完後輸入 `ls ~/5g-nr-rfsim-guides/oai_gnb_oai_ue/config` 確認是否有檔案：
 
 ```bash
@@ -100,6 +101,7 @@ du_gnb.conf
 ue.conf
 ```
 
-### 8.啟動與執行
-**1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。
+### 8.啟動與執行(CU)
+**1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。<br>
 
+**2.** 啟動 CU 並載入對應的 CU 設定檔 `sudo ./nr-softmodem --rfsim -O /home/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf` 。<br>
