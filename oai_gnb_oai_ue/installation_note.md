@@ -125,4 +125,4 @@ ue.conf
 [E1AP] Failed to create CUUP N3 UDP listener
 ```
 可能原因：使用VM沒有連線到實驗室電腦，IP位置錯誤無法存取 *192.168.8.x*。 <br>
-解決方法：使用OpenVPN連線電腦。
+解決方法：使用Wireguard連線實驗室電腦，使用學長給的VPN成功登入。<br> ![登入成功結果](../Images/oai_set_up_11.png)
