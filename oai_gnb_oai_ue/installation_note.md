@@ -115,5 +115,14 @@ ue.conf
 
 
 ### 99.遇到的問題
-**1.** clone設定檔的時候遇到 Ubuntu 無法連上網路，以下是修復的步驟：
+#### 1. clone設定檔的時候遇到 Ubuntu 無法連上網路，以下是修復的步驟：
 
+#### 2. 遇到 CU 啟動出現 Cannot assign requested address：
+遇到的問題 error：
+```bash
+[GTPU] bind: Cannot assign requested address
+[GTPU] failed to bind socket
+[E1AP] Failed to create CUUP N3 UDP listener
+```
+可能原因：使用VM沒有連線到實驗室電腦，IP位置錯誤無法存取 *192.168.8.x*。 <br>
+解決方法：使用OpenVPN連線電腦。
