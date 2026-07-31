@@ -126,4 +126,10 @@ ue.conf
 ```
 **可能原因**：使用VM沒有連線到實驗室電腦，IP位置錯誤無法存取 *192.168.8.x*。 <br>
 **解決方法**：使用Wireguard連線實驗室電腦，使用學長給的VPN成功登入。<br> ![登入成功結果](../Images/oai_set_up_11.png)
-**結果**：確認在 VM 上能成功連線到 *karl@192.168.8.83* 這台 VM 裡面。<br> ![成功結果](../Images/oai_set_up_12.png)
+**結果**：確認在 VM 上能成功連線到 *karl@192.168.8.83* 這台 VM 裡面。<br>
+
+```bash
+ssh karl@192.168.8.83
+bmwlab
+```
+![成功結果](../Images/oai_set_up_12.png)
