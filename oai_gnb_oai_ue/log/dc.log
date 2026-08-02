@@ -1,0 +1,443 @@
+CMDLINE: "./nr-softmodem" "--rfsim" "-O" "/home/karl/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/du_gnb.conf" 
+[CONFIG] function config_libconfig_init returned 0
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[OPT]    OPT disabled
+[HW]     Version: Branch: develop Abrev. Hash: c8b78200bf Date: Fri Jul 31 13:18:51 2026 +0200
+[GNB_APP] Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 1, RC.nb_nr_L1_inst = 1, RC.nb_RU = 1, RC.nb_nr_CC[0] = 1
+[NR_PHY] Initializing gNB RAN context: RC.nb_nr_L1_inst = 1 
+[NR_PHY] Registered with MAC interface module (0x5cd52a1173b0)
+[NR_PHY] Initializing NR L1: RC.nb_nr_L1_inst = 1
+[NR_PHY] thread cores for L1_RX -1 L1_TX -1
+[NR_PHY] TX_AMP = 519 (-36 dBFS)
+[PHY]    No prs_config configuration found..!!
+[GNB_APP] pdsch_AntennaPorts N1 1 N2 1 XP 1 pusch_AntennaPorts 1
+[GNB_APP] minTXRXTIME 6
+[GNB_APP] CSI-RS 0, SRS none, report type 0 (ssb_rsrp), 256 QAM force off, delta_MCS off, maxMIMO_Layers -1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16
+[GNB_APP] No RedCap configuration found
+[GNB_APP] No PTRS configuration found
+[GNB_APP] sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[NR_MAC] Candidates per PDCCH aggregation level on UESS: L1: 0, L2: 2, L4: 0, L8: 0, L16: 0
+[RRC]    Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 106,RACH_TargetReceivedPower -96
+[NR_MAC] Computing frequency (nrarfcn 641280 => 3619200 KHz, NR band 78
+[RRC]    absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[NR_MAC] Computing frequency (nrarfcn 640008 => 3600120 KHz, NR band 78
+[NR_MAC] PUSCH Target 200 RSSI thresh 0 Failure 10, PUCCH Target 150 RSSI thresh 0 Failure 10
+[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[F1AP]   F1-C DU IPaddr 127.0.0.3, connect to F1-C CU 127.0.0.4, binding GTP to 127.0.0.3 ports local 2152 remote 2152
+[NR_PHY] Copying 0 blacklisted PRB to L1 context
+[NR_MAC] Computing frequency (nrarfcn 640008 => 3600120 KHz, NR band 78
+[NR_MAC] Computing frequency (nrarfcn 640008 => 3600120 KHz, NR band 78
+[NR_MAC] Set TX antenna number to 1, Set RX antenna number to 1 (num ssb 1: 80000000,0)
+[NR_MAC] TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[NR_MAC] Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[NR_MAC] Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[NR_PHY] Set TDD Period Configuration: 2 periods per frame, 20 slots to be configured (8 DL, 3 UL)
+[NR_PHY] TDD period configuration: slot 0 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 1 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 2 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 3 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 4 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 5 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 6 is DOWNLINK
+[NR_PHY] TDD period configuration: slot 7 is FLEXIBLE: DDDDDDFFFFUUUU
+[NR_PHY] TDD period configuration: slot 8 is UPLINK
+[NR_PHY] TDD period configuration: slot 9 is UPLINK
+[NR_MAC] Command line parameters for OAI UE: -C 3619200000 -r 106 --numerology 1 --band 78 --ssb 516 
+[PHY]    DL frequency 3619200000 Hz, UL frequency 3619200000 Hz: uldl offset 0 Hz
+[PHY]    Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[PHY]    Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[NR_MAC] TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[NR_MAC] TDA index 0: start 0 length 13 k2 6
+[NR_MAC] TDA index 1: start 10 length 3 k2 6
+[NR_RRC] SIB1 freq: offsetToPointA 86
+[GNB_APP] F1AP: gNB idx 0 gNB_DU_id 3584, gNB_DU_name gNB-Eurecom-DU, TAC 1 MCC/MNC/length 1/1/2 cellID 12345678
+[GNB_APP] ngran_DU: Configuring Cell 0 for TDD
+[GNB_APP] Configured DU: cell ID 12345678, PCI 0
+[GNB_APP] gNB 0: neighbour_list has 0 serving cell(s)
+[GNB_APP] SDAP UL/DL headers in RRC are present
+[GNB_APP] gNB 0 SIB2 config: q_Hyst=0 dB, cellReselPrio=0, q_RxLevMin=-56 dBm, t_ReselectionNR=1 s
+[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[X2AP]   X2AP is disabled.
+[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[UTIL]   threadCreate() for TASK_DU_F1: creating thread with affinity ffffffff, priority 50
+[UTIL]   threadCreate() for time source iq samples: creating thread with affinity ffffffff, priority 2
+[F1AP]   Starting F1AP at DU
+[F1AP]   DU Task Received F1AP_DU_REGISTER_REQ for instance 0: sending SCTP messages via assoc_id 0
+[UTIL]   time manager configuration: [time source: iq_samples] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)
+[F1AP]   Local IPv4 Address: 127.0.0.3, Remote IPv4 Address: 127.0.0.4
+[GTPU]   Initializing UDP for local address 127.0.0.3 with port 2152
+[GTPU]   Created gtpu instance id: 80
+[UTIL]   threadCreate() for GTPrx_80: creating thread with affinity ffffffff, priority 50
+[F1AP]   DU Task Received SCTP_NEW_ASSOCIATION_RESP for instance 0: sending SCTP messages via assoc_id 0
+[F1AP]   DU_send_F1_SETUP_REQUEST
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU_handle_F1_SETUP_RESPONSE
+[F1AP]   Sending F1AP_SETUP_RESP ITTI message
+[MAC]    received F1 Setup Response from CU gNB-Eurecom-CU
+[MAC]    CU uses RRC version 17.3.0
+[MAC]    Clearing the DU's UE states before, if any.
+[F1AP]   DU Task Received F1AP_GNB_DU_CONFIGURATION_UPDATE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[MAC]    received gNB-DU configuration update acknowledge
+[PHY]    RU clock source set as internal
+[PHY]    number of L1 instances 1, number of RU 1, number of CPU cores 8
+[PHY]    RU thread-pool core string -1,-1 (size 2)
+[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for ru_thread: creating thread with affinity ffffffff, priority 97
+[PHY]    Starting RU 0 (,synch_to_ext_device) on cpu 4
+[PHY]    Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[PHY]    Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[PHY]    fp->scs=30000
+[PHY]    fp->ofdm_symbol_size=2048
+[PHY]    fp->nb_prefix_samples0=176
+[PHY]    fp->nb_prefix_samples=144
+[PHY]    fp->slots_per_subframe=2
+[PHY]    fp->samples_per_subframe_wCP=57344
+[PHY]    fp->samples_per_frame_wCP=573440
+[PHY]    fp->samples_per_subframe=61440
+[PHY]    fp->samples_per_frame=614400
+[PHY]    fp->dl_CarrierFreq=3619200000
+[PHY]    fp->ul_CarrierFreq=3619200000
+[PHY]    fp->Nid_cell=0
+[PHY]    fp->first_carrier_offset=1412
+[PHY]    fp->ssb_start_subcarrier=0
+[PHY]    fp->Ncp=0
+[PHY]    fp->N_RB_DL=106
+[PHY]    fp->numerology_index=1
+[PHY]    fp->ofdm_offset_divisor=8
+[PHY]    fp->threequarter_fs=0
+[PHY]    fp->sl_CarrierFreq=0
+[PHY]    fp->N_RB_SL=0
+[NR_PHY] nb_tx_streams 1, nb_rx_streams 1
+[PHY]    Setting RF config for N_RB 106, NB_RX 1, NB_TX 1
+[PHY]    tune_offset 0 Hz, sample_rate 61440000 Hz
+[PHY]    Channel 0: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[PHY]    Channel 0: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[HW]     Running as server waiting opposite rfsimulators to connect
+Initializing random number generator, seed 6787329630185585424
+[HW]     [RAU] has loaded RFSIMULATOR device.
+[PHY]    RU 0 Setting N_TA_offset to 800 samples (UL Freq 3600120, N_RB 106, mu 1)
+[PHY]    Signaling main thread that RU 0 is ready, sl_ahead 6
+[PHY]    L1 configured without analog beamforming
+[PHY]    Attaching RU 0 antenna 0 to gNB antenna 0
+[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+TYPE <CTRL-C> TO TERMINATE
+[PHY]    got sync (ru_thread)
+[PHY]    got sync (L1_stats_thread)
+[PHY]    RU 0 rf device ready
+[PHY]    RU 0 RF started cpu_meas_enabled 0
+[HW]     No connected device, generating void samples...
+[PHY]    Command line parameters for OAI UE: -C 3619200000 -r 106 --numerology 1 --ssb 516 
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_MAC] Frame.Slot 512.0
+
+[NR_MAC] Frame.Slot 640.0
+
+[NR_MAC] Frame.Slot 768.0
+
+[NR_MAC] Frame.Slot 896.0
+
+[NR_MAC] Frame.Slot 0.0
+
+[NR_MAC] Frame.Slot 128.0
+
+[HW]     Client connects from ::ffff:127.0.0.1:63111
+[HW]     RFsim: Number of antennas changed from 0 to 1
+[NR_MAC] Frame.Slot 256.0
+
+[NR_MAC] Frame.Slot 384.0
+
+[NR_PHY] [RAPROC] 389.19 Initiating RA procedure with preamble 34, energy 43.0 dB (I0 0, thres 120), delay 0 start symbol 8 freq index 0
+[NR_MAC] 389.19 UE RA-RNTI 0113 TC-RNTI 27bf: initiating RA procedure
+[NR_MAC] UE 27bf: Sync beam index 0
+[NR_MAC] UE 27bf: Msg3 scheduled at 390.19 (390.10 TDA 0) start 0 RBs 8
+[NR_MAC] UE 27bf: 390.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 34, timing_offset = 0 (estimated distance 0.0 [m])
+[NR_MAC]  390.19 PUSCH with TC_RNTI 0x27bf received correctly
+[MAC]    [RAPROC] Received SDU for CCCH length 6 for UE 27bf
+[RLC]    Activated srb0 for UE 10175
+[NR_RRC] SRS configured with 1 ports
+[RLC]    Added srb 1 to UE 10175
+[NR_MAC] Activating scheduling Msg4 for TC_RNTI 0x27bf (state WAIT_Msg3)
+[F1AP]   DU Task Received F1AP_INITIAL_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[NR_MAC] UE 27bf Generate Msg4: feedback at  391.19, payload 157 bytes, next state nrRA_WAIT_Msg4_MsgB_ACK
+[NR_MAC]  391.19 UE 27bf: Received Ack of Msg4. CBRA procedure succeeded (UE Connected)
+[NR_MAC] Adding new UE context with RNTI 0x27bf
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 39 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 30 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 66 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 8 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 20 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 19 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 46 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[RLC]    Added srb 2 to UE 10175
+[RLC]    Added drb 1 to UE 10175
+[RLC]    Added DRB to UE 10175
+[GTPU]   Incoming DRB 1 / PDU Session 1 - UL TEID -1747190549
+[GTPU]   [80] UE ID 10175: Create tunnel TEID incoming 0xa5bd7000 outgoing 0x97dbfceb to remote IPv4 127.0.0.4, IPv6 ::, port 2152
+[F1AP]   DU Task Received F1AP_UE_CONTEXT_SETUP_RESP for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[NR_MAC] Received ACK for RRCReconfiguration, but nothing to apply!
+[F1AP]   DU Task Received F1AP_UL_RRC_MESSAGE for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   size 8 UE RNTI 27bf in SRB 1
+[F1AP]   DU Task Received SCTP_DATA_IND for instance 0: sending SCTP messages via assoc_id 11
+[F1AP]   Calling handler with instance 0
+[NR_MAC] DU received confirmation of successful RRC Reconfiguration
+[F1AP]   DU Task Received F1AP_UE_CONTEXT_MODIFICATION_RESP for instance 0: sending SCTP messages via assoc_id 11
+[NR_MAC] Frame.Slot 512.0
+UE RNTI 27bf CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -43 (14 meas)
+UE 27bf: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 22.2+7.2 dB), BLER 0.05905 MCS (0) 0 CCE fail 1, goodput 0.00 Mbps
+UE 27bf: ulsch_rounds 51/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03138 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5 SNR 22.3 (+2.3) dB CCE fail 0, goodput 0.00 Mbps
+UE 27bf: LCID 1: TX            534 RX            289 bytes
+UE 27bf: LCID 2: TX              0 RX              0 bytes
+UE 27bf: LCID 4: TX              3 RX             55 bytes
