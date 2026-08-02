@@ -128,7 +128,9 @@ amf_ip_address = ({ ipv4 = "192.168.8.108"; });
 **2.** 啟動 CU 並載入對應的 CU 設定檔 `sudo ./nr-softmodem --rfsim -O /home/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf` 。<br>
 以下是CU成功啟動：<br> ![CU成功結果1](../Images/oai_setup_13.png) ![CU成功結果2](../Images/oai_setup_14.png) 
 
-**3.** 啟動 DU 並載入對應的 CU 設定檔 `sudo ./nr-softmodem --rfsim -O /home/aiml/johnson/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/du_gnb.conf`，以下是成功啟動的結果：<br>![DU成功結果1](../Images/oai_setup_15.png)
+**3.** 啟動 DU 並載入對應的 DU 設定檔 `sudo ./nr-softmodem --rfsim -O /home/aiml/johnson/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/du_gnb.conf`，以下是成功啟動的結果：<br>![DU成功結果1](../Images/oai_setup_15.png)
+
+**4.** 啟動 UE 並載入對應的 UE 設定檔 `sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --rfsim -O /home/aiml/johnson/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/ue.conf`，以下是成功啟動的結果：<br>![UE成功結果1](../Images/oai_setup_16.png)
 
 
 
