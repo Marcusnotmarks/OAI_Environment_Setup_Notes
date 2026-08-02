@@ -149,6 +149,26 @@ IPv4 10.45.1.177
 
 ### 99.遇到的問題
 #### 1. clone設定檔的時候遇到 Ubuntu 無法連上網路，以下是修復的步驟：
+**遇到的問題** 在 VM 中 clone 專案時出現網路錯誤，導致無法下載 GitHub 專案，例如：
+
+```bash
+fatal: unable to access 'https://github.com/...'
+Could not resolve host
+Temporary failure in name resolution
+```
+
+**可能原因**
+Ubuntu VM 沒有成功連接到網際網路，可能原因包括：VM 網路介面未啟用、VirtualBox / VMware 網路模式設定錯誤（NAT / Bridge）、DNS 設定異常。
+
+**解決方法** 回到 *VM* 首頁，進入 *Edit* ，點 *virtual Network Editor* ，選 *Restore Defaults*。
+
+**結果**：成功完成 clone ，`ls`。<br>
+可以看到：
+```bash
+openairinterface5g
+5g-nr-rfsim-guides
+```
+---
 
 #### 2. 遇到 CU 啟動出現 Cannot assign requested address：
 **遇到的問題** error：
@@ -158,7 +178,9 @@ IPv4 10.45.1.177
 [E1AP] Failed to create CUUP N3 UDP listener
 ```
 **可能原因**：使用VM沒有連線到實驗室電腦，IP位置錯誤無法存取 *192.168.8.x*。 <br>
+
 **解決方法**：使用Wireguard連線實驗室電腦，使用學長給的VPN成功登入。<br> ![登入成功結果](../Images/oai_set_up_11.png)
+
 **結果**：確認在 VM 上能成功連線到 *karl@192.168.8.83* 這台 VM 裡面，並創建自己的資料夾 `mkdir marcus`。<br>
 
 ```bash
