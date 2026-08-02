@@ -132,10 +132,19 @@ amf_ip_address = ({ ipv4 = "192.168.8.108"; });
 
 **4.** 啟動 UE 並載入對應的 UE 設定檔 `sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --rfsim -O /home/aiml/johnson/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/ue.conf`，以下是成功啟動的結果：<br>![UE成功結果1](../Images/oai_setup_16.png)
 
+**5.** RRC成功建立、NAS 成功建立、PDU Session 成功、UE 已取得 IP、OAI Tunnel 建立成功：<br>
+```bash
+[RRC] State = NR_RRC_CONNECTED
 
+Received NAS_CONN_ESTABLI_CNF
 
+Received PDU Session Establishment Accept
 
+UE IPv4: 10.45.1.177
 
+TUN interface oaitun_ue1 successfully configured
+IPv4 10.45.1.177
+```
 
 
 ### 99.遇到的問題
