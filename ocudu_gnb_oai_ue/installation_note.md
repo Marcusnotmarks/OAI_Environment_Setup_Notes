@@ -50,10 +50,10 @@ cd cmake_targets
 cd ~/marcus/nrue/openairinterface5g/cmake_targets/ran_build/build
 ls -l nr-softmodem nr-uesoftmodem
 ```
-![確認程式](../Images/nure_setup_2.png)
+![確認程式](../Images/nrue_setup_2.png)
 
 確認版本 `grep -n "max_mimo_layers" ~/marcus/nrue/openairinterface5g/openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c` ：
-![版本確認](../Images/nure_setup_3.png)
+![版本確認](../Images/nrue_setup_3.png)
 
 ---
 
