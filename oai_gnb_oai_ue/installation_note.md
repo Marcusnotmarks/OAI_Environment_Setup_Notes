@@ -120,11 +120,13 @@ grep -n "amf_ip_address" ~/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gn
 amf_ip_address = ({ ipv4 = "192.168.8.108"; });
 ```
 
+---
+
 ### 8.啟動與執行(CU)
 **1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。<br>
 
 **2.** 啟動 CU 並載入對應的 CU 設定檔 `sudo ./nr-softmodem --rfsim -O /home/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf` 。<br>
-
+以下是CU成功啟動：<br> ![CU成功結果1](../Images/oai_setup_13.png) ![CU成功結果2](../Images/oai_setup_14.png) 
 
 
 
