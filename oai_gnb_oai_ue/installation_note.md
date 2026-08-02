@@ -101,6 +101,25 @@ du_gnb.conf
 ue.conf
 ```
 
+**4.** 修改 `AMF連線設定` 以及 `GNB網路介面`，輸入：<br>
+
+```bash
+sed -i 's/192\.168\.8\.44/192.168.8.83/g' \
+~/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf
+```
+
+**5.** 並輸入以下確認是否都更改ip位置成功：<br>
+```bash
+grep -n "192.168.8.83" ~/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf
+grep -n "amf_ip_address" ~/marcus/5g-nr-rfsim-guides/oai_gnb_oai_ue/config/cu_gnb.conf
+```
+若出現則代表修改成功：
+```bash
+52: GNB_IPV4_ADDRESS_FOR_NG_AMF = "192.168.8.83";
+53: GNB_IPV4_ADDRESS_FOR_NGU    = "192.168.8.83";
+amf_ip_address = ({ ipv4 = "192.168.8.108"; });
+```
+
 ### 8.啟動與執行(CU)
 **1.** 在終端機開啟三個不同的畫面，並輸入路徑： `cd ~/openairinterface5g/cmake_targets/ran_build/build` 。<br>
 
