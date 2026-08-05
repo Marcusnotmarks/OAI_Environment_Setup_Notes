@@ -84,7 +84,7 @@ sudo apt update
 
 此步驟只會更新套件索引，不等同於執行完整系統升級。
 
-![更新基本套件](../Images/oai_setup_2.png)
+![更新基本套件](../Images/oai_seup_2.png)
 
 ---
 
