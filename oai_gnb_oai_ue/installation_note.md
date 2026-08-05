@@ -1,5 +1,6 @@
 # OAI gNB (CU/DU 分離) 與 OAI NR-UE RF 模擬安裝筆記
 詳細記錄我在建立此 OAI 的各項步驟以及使用的程式。
+此為舊版，更新版請參照 `installation_note_1.1_zh.md`
 
 ## 前置作業
 建置 OAI 環境前需要一個 Ubuntu 環境。
