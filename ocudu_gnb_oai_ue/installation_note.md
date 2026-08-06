@@ -77,3 +77,20 @@ liboai_zmqdevif.so
 ```
 ![安裝成功](../Images/nrue_setup_4.png)
 建置成功後，建立 RF 模擬器函式庫的符號連結：
+執行：
+```bash
+cp liboai_zmqdevif.so librfsimulator.so
+
+ls -l librfsimulator.so
+```
+如果能看到 `librfsimulator.so`，就可以進到下一步：修改 `max_mimo_layers`。 ![安裝成功2](../Images/nrue_setup_5.png)
+
+---
+
+### 5. 原始碼修補
+修改 `max_mimo_layers` ，回到專案根目錄： `cd ~/marcus/nrue/openairinterface5g` ，並執行 `nano openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c` 。<br>
+搜尋：
+```bash
+AssertFatal(max_mimo_layers
+```
+(../Images/nrue_setup_6.png)
