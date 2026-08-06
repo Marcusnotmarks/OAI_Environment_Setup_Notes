@@ -57,9 +57,23 @@ ls -l nr-softmodem nr-uesoftmodem
 
 ---
 
-### 4. 
+### 4. 建置特定目標
+執行：
+```bash
+cd openairinterface5g/cmake_targets/ran_build/build
 
+cmake --build . --target nr-softmodem nr-uesoftmodem ldpc params_libconfig oai_zmqdevif
+```
+結果應該是長這樣：
 ```bash
 cmake --build . --target nr-softmodem nr-uesoftmodem ldpc params_libconfig oai_zmqdevif
 [426/426] Linking CXX executable nr-softmodem
 ```
+這一步的目的，是確認這幾個目標都有成功建出來，尤其是：
+```bash
+nr-softmodem
+nr-uesoftmodem
+liboai_zmqdevif.so
+```
+![安裝成功](../Images/nrue_setup_4.png)
+建置成功後，建立 RF 模擬器函式庫的符號連結：
