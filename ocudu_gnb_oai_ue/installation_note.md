@@ -93,4 +93,28 @@ ls -l librfsimulator.so
 ```bash
 AssertFatal(max_mimo_layers
 ```
-(../Images/nrue_setup_6.png)
+![原始碼修補](../Images/nrue_setup_6.png)
+
+修補以下程式：
+```bash
+int max_mimo_layers = 0;
+if (sc_info->maxMIMO_Layers_PDSCH)
+  max_mimo_layers = *sc_info->maxMIMO_Layers_PDSCH;
+else
+  max_mimo_layers = mac->uecap_maxMIMO_PDSCH_layers;
+
+AssertFatal(max_mimo_layers > 0,
+            "Invalid number of max MIMO layers for PDSCH\n");
+```
+在 `AssertFatal(max_mimo_layers` 之前加入程式：
+```bash
+if (max_mimo_layers == 0) {
+  max_mimo_layers = 2;
+}
+```
+儲存後，重新建置：
+```bash
+cd openairinterface5g/cmake_targets
+./build_oai --nrUE --ninja -w ZMQ -c
+```
+![建置成功結果](../Images/nrue_setup_7.png)
