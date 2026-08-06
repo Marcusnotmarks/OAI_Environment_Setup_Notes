@@ -59,4 +59,7 @@ ls -l nr-softmodem nr-uesoftmodem
 
 ### 4. 
 
-
+```bash
+cmake --build . --target nr-softmodem nr-uesoftmodem ldpc params_libconfig oai_zmqdevif
+[426/426] Linking CXX executable nr-softmodem
+```
