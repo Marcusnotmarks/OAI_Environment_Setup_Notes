@@ -118,3 +118,9 @@ cd openairinterface5g/cmake_targets
 ./build_oai --nrUE --ninja -w ZMQ -c
 ```
 ![建置成功結果](../Images/nrue_setup_7.png)
+接下來先確認執行檔與 `ZMQ library` 都還在：
+```bash
+-rwxrwxr-x 1 karl karl   674600  八   7 00:10 liboai_zmqdevif.so
+-rwxrwxr-x 1 karl karl  1227304  八   7 00:10 librfsimulator.so
+-rwxrwxr-x 1 karl karl 48028328  八   7 00:11 nr-uesoftmodem
+```
