@@ -192,8 +192,9 @@ sudo ./nr-uesoftmodem \
 ```
 ![啟動成功結果](../Images/nrue_setup_10.png)
 
+---
 
-
+### 8. 安裝 gNB
 
 
 
