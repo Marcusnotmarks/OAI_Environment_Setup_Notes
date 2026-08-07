@@ -194,9 +194,23 @@ sudo ./nr-uesoftmodem \
 
 ---
 
-### 8. 安裝 gNB
+## gNB 安裝筆記
 
+### 1. 複製儲存庫
+執行：
+```bash
+git clone https://gitlab.com/ocudu/ocudu.git
+cd ocudu
+```
 
+### 2. 建置
+執行：
+```bash
+mkdir build
+cd build
+cmake ../
+make -j 8
+```
 
 
 
