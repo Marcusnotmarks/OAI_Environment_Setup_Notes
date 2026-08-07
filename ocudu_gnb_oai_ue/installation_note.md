@@ -161,3 +161,118 @@ position0 = {
 }
 ```
 並確認執行 `ls -l ~/marcus/nrue/openairinterface5g/cmake_targets/ran_build/build/librfsimulator.so` 確認檔案是否存在。 ![查詢結果](../Images/nrue_setup_9.png)
+
+---
+
+### 7. 啟動 NR-UE
+輸入目錄 `cd ~/marcus/nrue/openairinterface5g/cmake_targets/ran_build/build` ，並執行以下程式：
+```bash
+sudo ./nr-uesoftmodem \
+-r 106 \
+--numerology 1 \
+--band 78 \
+-C 3489420000 \
+--ssb 42 \
+--rfsim \
+-O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/marcus/oai_ue.conf \
+--ue-nb-ant-tx 2 \
+--ue-nb-ant-rx 2 \
+--log_config.global_log_options level,nocolor \
+--device.name oai_zmqdevif \
+--zmq.[0].tx_channels "tcp://127.0.0.1:4556,tcp://127.0.0.1:4557" \
+--zmq.[0].rx_channels "tcp://127.0.0.1:4558,tcp://127.0.0.1:4559"
+```
+若成功啟動則會看到以下成果：
+```bash
+[CONFIG] function config_libconfig_init returned 0
+[SIM] UICC simulation...
+[HW] [RAU] has loaded RFSIMULATOR device.
+[HW] [ZMQ] TX socket ...
+[HW] [ZMQ] RX socket ...
+```
+![啟動成功結果](../Images/nrue_setup_10.png)
+
+
+
+
+
+
+
+
+## 99. Troubleshooting
+
+### 1. 找不到 `uecap.xml`
+
+**遇到的問題**
+
+執行：
+
+```bash
+ls -l /opt/oai-nr-ue/etc/uecap.xml
+```
+
+出現：
+
+```bash
+ls: cannot access '/opt/oai-nr-ue/etc/uecap.xml': No such file or directory
+```
+
+**可能原因**
+
+目前使用 Source Build 建立 OAI，系統中沒有 `/opt/oai-nr-ue/etc/` 目錄，因此不存在 `uecap.xml`。
+
+**解決方法**
+
+將啟動指令中的：
+
+```bash
+--uecap_file /opt/oai-nr-ue/etc/uecap.xml
+```
+
+移除即可。
+
+**結果**
+
+NR-UE 可以正常啟動，並成功載入 ZMQ RF Simulator。
+
+---
+
+### 2. `cannot open include file`
+
+**遇到的問題**
+
+第一次啟動 NR-UE 時出現：
+
+```bash
+file .../marcus/oai_ue.conf - line 16: cannot open include file
+
+config module "libconfig" couldn't be loaded
+
+Segmentation fault
+```
+
+**可能原因**
+
+將 `ue.conf` 複製至 `CONF/marcus/` 後，`@include` 使用原本的相對路徑，導致找不到引用檔案。
+
+**解決方法**
+
+將：
+
+```bash
+@include "channelmod_rfsimu_LEO_satellite.conf"
+```
+
+修改為：
+
+```bash
+@include "../channelmod_rfsimu_LEO_satellite.conf"
+```
+
+**結果**
+
+設定檔成功載入，NR-UE 可正常啟動。
+
+
+
+
