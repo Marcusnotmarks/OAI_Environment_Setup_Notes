@@ -124,3 +124,40 @@ cd openairinterface5g/cmake_targets
 -rwxrwxr-x 1 karl karl  1227304  八   7 00:10 librfsimulator.so
 -rwxrwxr-x 1 karl karl 48028328  八   7 00:11 nr-uesoftmodem
 ```
+
+---
+
+### 6. UE 設定
+執行 `find ~/marcus/nrue/openairinterface5g -name "oai_ue.conf" -o -name "ue.conf"` ，尋找路徑： `openairinterface5g/targets/PROJECTS/GENERIC-NR-5GC/CONF/johnson/oai_ue.conf`。<br> [查詢結果](../Images/nrue_setup_8.png)
+
+修改 `imsi` 、 `key` 、 `opc` 、 `dnn` 、 `nssai_sst`，以下為修改前數值：
+```bash
+uicc0 = {
+imsi = "2089900007487";
+key = "fec86ba6eb707ed08905757b1bb44b8f";
+opc= "C42449363BBAD02B66D16BC975D77CC1";
+pdu_sessions = ({ dnn = "oai"; nssai_sst = 1; });
+}
+
+position0 = {
+    x = 0.0;
+    y = 0.0;
+    z = 6377900.0;
+}
+```
+以下為修改的正確數值(請務必修改成此數值)：
+```bash
+uicc0 = {
+imsi = "001010000062653";
+key = "8baf473f2f8fd09487cccbd7097c6862";
+opc= "8e27b6af0e692e750f32667a3b14605d";
+pdu_sessions = ({ dnn = "Internet"; nssai_sst = 1; });
+}
+
+position0 = {
+    x = 0.0;
+    y = 0.0;
+    z = 6377900.0;
+}
+```
+並確認執行 `ls -l ~/marcus/nrue/openairinterface5g/cmake_targets/ran_build/build/librfsimulator.so` 確認檔案是否存在。 [查詢結果](../Images/nrue_setup_9.png)
