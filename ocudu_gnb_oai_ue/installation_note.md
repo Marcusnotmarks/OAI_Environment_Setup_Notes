@@ -160,4 +160,4 @@ position0 = {
     z = 6377900.0;
 }
 ```
-並確認執行 `ls -l ~/marcus/nrue/openairinterface5g/cmake_targets/ran_build/build/librfsimulator.so` 確認檔案是否存在。 [查詢結果](../Images/nrue_setup_9.png)
+並確認執行 `ls -l ~/marcus/nrue/openairinterface5g/cmake_targets/ran_build/build/librfsimulator.so` 確認檔案是否存在。 ![查詢結果](../Images/nrue_setup_9.png)
