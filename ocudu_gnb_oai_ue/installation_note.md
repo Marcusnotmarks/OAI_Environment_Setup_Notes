@@ -212,6 +212,36 @@ cmake ../
 make -j 8
 ```
 
+### 3. 測試
+執行 `make test -j $(nproc)` 測試剛剛是否有建立成功，成功執行後，應顯示 100% tests passed，共通過全部 7301 個測試案例。 ![測試成功結果](../Images/nrue_setup_11.png)
+
+
+### 4. 安裝 gNB 執行檔
+執行以下程式安裝執行檔：
+```bash
+cd apps/gnb
+sudo make install
+```
+![測試成功結果](../Images/nrue_setup_12.png)
+
+### 5. 確認是否有 `test.yaml`
+執行 `find ~ -name "test.yaml"` 。若無的話可以參考 `99. Troubleshooting - 3`，了解如何建立。
+
+
+### 6.啟動 gNB
+執行 `sudo ./gnb -c test.yaml`，期待看到以下結果：
+```bash
+--== OCUDU gNB (commit 91552ede58) ==--
+
+Lower PHY in executor sequential baseband mode.
+Available radio types: uhd, zmq and realtime_loopback.
+Cell pci=1, bw=40 MHz, 2T2R, dl_arfcn=632628 (n78), dl_freq=3489.42 MHz, ...
+
+N2: Connection to AMF on 192.168.8.108:38412 completed
+==== gNB started ===
+Type <h> to view help
+```
+![gnb安裝成功結果](../Images/nrue_setup_13.png)
 
 
 ## 99. Troubleshooting
