@@ -58,8 +58,8 @@ The Ubuntu VM setup guide describes how to install and configure an Ubuntu 22.04
 
 The latest installation guide is available in both Chinese and English.
 
-- **Chinese:** `oai_gnb_oai_ue/installation_note_zh.md`
-- **English:** `oai_gnb_oai_ue/installation_note_en.md`
+- **Chinese:** `oai_gnb_oai_ue/installation_note_v1.1_zh.md`
+- **English:** `oai_gnb_oai_ue/installation_note_v1.1_en.md`
 
 This guide includes:
 
