@@ -222,7 +222,7 @@ make -j 8
 cd apps/gnb
 sudo make install
 ```
-![測試成功結果](../Images/nrue_setup_12.png)
+
 
 ### 5. 確認是否有 `test.yaml`
 執行 `find ~ -name "test.yaml"` 。若無的話可以參考 `99. Troubleshooting - 3`，了解如何建立。
@@ -241,7 +241,7 @@ N2: Connection to AMF on 192.168.8.108:38412 completed
 ==== gNB started ===
 Type <h> to view help
 ```
-![gnb安裝成功結果](../Images/nrue_setup_13.png)
+![gnb安裝成功結果](../Images/nrue_srtup_13.png)
 
 
 ## 99. Troubleshooting
