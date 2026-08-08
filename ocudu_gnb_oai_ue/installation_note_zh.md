@@ -567,6 +567,28 @@ N2: Connection to AMF ... completed
 
 ---
 
+# Network Topology
+
+```
+            Open5GS
+               │
+            N2 Interface
+               │
+         +-------------+
+         | OCUDU gNB   |
+         +-------------+
+               │
+        ZMQ RF Simulator
+               │
+         +-------------+
+         | OAI NR-UE   |
+         +-------------+
+               │
+        TUN Interface
+               │
+        10.45.x.x
+```
+
 # Verification Checklist
 
 確認下列項目皆成功後，即表示 OAI NR-UE 與 OCUDU gNB 已成功完成連線。
