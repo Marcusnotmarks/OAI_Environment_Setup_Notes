@@ -128,7 +128,7 @@ cd openairinterface5g/cmake_targets
 ---
 
 ### 6. UE 設定
-執行 `find ~/marcus/nrue/openairinterface5g -name "oai_ue.conf" -o -name "ue.conf"` ，尋找路徑： `openairinterface5g/targets/PROJECTS/GENERIC-NR-5GC/CONF/johnson/oai_ue.conf`。<br> [查詢結果](../Images/nrue_setup_8.png)
+執行 `find ~/marcus/nrue/openairinterface5g -name "oai_ue.conf" -o -name "ue.conf"` ，尋找路徑： `openairinterface5g/targets/PROJECTS/GENERIC-NR-5GC/CONF/johnson/oai_ue.conf`。<br> ![查詢結果](../Images/nrue_setup_8.png)
 
 修改 `imsi` 、 `key` 、 `opc` 、 `dnn` 、 `nssai_sst`，以下為修改前數值：
 ```bash
