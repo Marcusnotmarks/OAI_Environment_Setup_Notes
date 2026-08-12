@@ -85,43 +85,36 @@ TYPE <CTRL-C> TO TERMINATE
 [MAC]    I Initialization of 4-Step CBRA procedure
 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 180
 [NR_MAC] I PRACH scheduler: Selected RO Frame 128, Slot 19, Symbol 0, Fdm 0
-[PHY]    I PRACH [UE 0] in frame.slot 128.19, placing PRACH in position 2972, Msg1/MsgA-Preamble frequency start 6 (k1 6), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 7
+[PHY]    I PRACH [UE 0] in frame.slot 128.19, placing PRACH in position 2972, Msg1/MsgA-Preamble frequency start 6 (k1 6), preamble_offset 52, first_nonzero_root_idx 0, preambleIndex = 52
 [PHY]    I [UE 0] RAR-Msg2 decoded
 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
-[NR_MAC] A [UE 0][RAPROC][129.7] Found RAR with the intended RAPID 7
+[NR_MAC] A [UE 0][RAPROC][129.7] Found RAR with the intended RAPID 52
 [MAC]    W received TA command 31
 [NR_MAC] A [RAPROC][129.14] RA-Msg3 transmitted
-[NR_MAC] A [UE 0][131.13][RAPROC] 4-Step RA procedure succeeded. CBRA: Contention Resolution is successful.
+[NR_MAC] A [UE 0][130.15][RAPROC] 4-Step RA procedure succeeded. CBRA: Contention Resolution is successful.
 [NR_RRC] I [UE0][RAPROC] Logical Channel DL-CCCH (SRB0), Received NR_RRCSetup
 [RLC]    I Added srb 1 to UE 0
 [NR_RRC] I State = NR_RRC_CONNECTED
 [NAS]    I Generate Initial NAS Message: Registration Request
-[NR_RRC] I [UE 0][RAPROC] Logical Channel UL-DCCH (SRB1), Generating RRCSetupComplete (bytes33)
 [NAS]    I [UE 0] Received NR_NAS_CONN_ESTABLISH_IND: asCause 0
-[MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
-[NR_MAC] E NR_SRI_PUSCH_PowerControl not implemented, power control will not work as intended
-[NR_RRC] I [UE0][RAPROC] Logical Channel DL-CCCH (SRB0), Received NR_RRCSetup
-[NR_RRC] I State = NR_RRC_CONNECTED
-[NAS]    I Generate Initial NAS Message: Registration Request
 [NR_RRC] I [UE 0][RAPROC] Logical Channel UL-DCCH (SRB1), Generating RRCSetupComplete (bytes33)
-[NAS]    I [UE 0] Received NR_NAS_CONN_ESTABLISH_IND: asCause 0
 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
 [NR_MAC] E NR_SRI_PUSCH_PowerControl not implemented, power control will not work as intended
 [NAS]    I [UE 0] Received NAS_DOWNLINK_DATA_IND type FGS_AUTHENTICATION_REQUEST with length 42
-kausf:9 ca c2 d6 14 be be 63 85 8 fc 48 1e 48 f 6c f0 eb 54 52 d1 fe 14 ee bf f0 6b 1 9d f3 79 b9 
-kseaf:aa 63 ab e4 ff 67 d4 7 3a 3b f6 61 9c 43 61 b8 6 17 5b 9 e6 6 b2 93 ad 61 3c 5e 23 37 89 40 
-kamf:9e 95 7 29 76 9f 2 cc 92 11 2 9f 41 d3 f5 91 48 6e d4 ab 6d a1 33 31 a2 44 54 12 e2 a7 af f 
+kausf:d3 3 6c e5 68 2d ab ac df ee b2 c9 7c c3 6f f9 ec 14 33 ca 2c 1b f1 7e 6e 19 ae 7a bd 90 7e 60 
+kseaf:b7 a0 48 6b 8a 39 f3 4d c4 24 23 98 a 77 d8 33 e0 1 2 73 a1 ca 8e cb ac 48 eb 7a 79 5a 92 82 
+kamf:95 c7 3b 35 23 83 54 34 99 60 df ff 37 74 d9 f4 c6 5f d4 1f c7 d0 9e 0 8f 0 c4 24 3d 83 54 7c 
 [NAS]    I [UE 0] Received NAS_DOWNLINK_DATA_IND type FGS_SECURITY_MODE_COMMAND with length 19
-knas_int: 2c 83 ef 8b f1 c 27 69 f9 3c 91 8c 43 97 c7 77 
-knas_enc: ae 55 79 ec 81 cb 8 ad 78 2d 30 95 71 f9 91 52 
+knas_int: 2b 91 de b6 41 36 5e 9d a5 66 ba 50 ff cb 2 49 
+knas_enc: e8 11 8f b8 d8 2c 77 4c 5b 60 8 ba 6 90 57 d5 
 [NAS]    I Generate Initial NAS Message: Registration Request
-mac 6d 44 1a a8 
-[NR_MAC] I [139.6] Received TA_COMMAND 30 TAGID 0 CC_id 0 
+mac d4 e0 ba be 
+[NR_MAC] I [137.6] Received TA_COMMAND 30 TAGID 0 CC_id 0 
 [NR_RRC] I Received securityModeCommand (gNB 0)
 [NR_RRC] I Receiving from SRB1 (DL-DCCH), Processing securityModeCommand
 [NR_RRC] I Security algorithm is set to nea0
 [NR_RRC] I Integrity protection algorithm is set to nia2
-[NR_RRC] I deriving kRRCenc, kRRCint from KgNB=67 80 4e 6b 92 88 d1 7f 06 da d7 70 7e 7e da 52 f4 27 46 a5 d6 c6 60 da c2 78 4d 65 8f a7 18 48 
+[NR_RRC] I deriving kRRCenc, kRRCint from KgNB=9d c8 66 0a 11 c5 8a b4 44 84 fe c5 ee d9 5e f3 a4 dd 3e 6b dc ac 08 c7 aa 6e 2f 6c 3e 97 00 fe 
 [NR_RRC] I Receiving from SRB1 (DL-DCCH), encoding securityModeComplete, rrc_TransactionIdentifier: 1
 [NR_RRC] I securityModeComplete payload: 2a 00 00 00 00 00 00 00 f0 00 00 00 00 00 00 00 
 [NR_RRC] I Received Capability Enquiry (gNB 0)
@@ -158,20 +151,19 @@ mac 6d 44 1a a8
 [NAS]    I [UE 0] Received NAS_DOWNLINK_DATA_IND type FGS_REGISTRATION_ACCEPT with length 46
 [NAS]    I Received Registration Accept with result 3GPP
 [NAS]    I SMS not allowed in 5GS Registration Result
-[NR_RRC] I 5G-GUTI: AMF pointer 0, AMF Set ID 1, 5G-TMSI 3221226572 
-mac 71 91 37 1a 
+[NR_RRC] I 5G-GUTI: AMF pointer 0, AMF Set ID 1, 5G-TMSI 3221225851 
+mac cf 73 51 d2 
 [NAS]    I Send NAS_UPLINK_DATA_REQ message(RegistrationComplete)
+[NR_MAC] I [UE 0] paging UE_ID=379
 [NAS]    I requested PDU session ID 1 type 1 NSSAI 1.16777215 DNN Internet
-mac 42 dc 1b a 
+mac e0 f0 a7 bb 
 [NAS]    I Send NAS_UPLINK_DATA_REQ message(PduSessionEstablishRequest)
-[NR_MAC] I [UE 0] paging UE_ID=76
 [NAS]    I [UE 0] Received NAS_DOWNLINK_DATA_IND type FGS_CONFIGURATION_UPDATE_COMMAND with length 40
 [NR_RRC] W unknown message type 84
 [RLC]    I Added srb 2 to UE 0
 [RLC]    I Added drb 1 to UE 0
 [RLC]    I Added DRB to UE 0
 [NR_RRC] I RRCReconfiguration includes radio Bearer Configuration
-[MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
 [SDAP]   W  Could not find SDAP entity: entity list empty (ue_id=0 pdu_session_id=1)
 [SDAP]   I Creating SDAP entity ue_id=0 pdu_session_id=1
 [SDAP]   I Default DRB for the created SDAP entity: DRB 1 
@@ -180,247 +172,57 @@ mac 42 dc 1b a
 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
 [NR_RRC] I  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
 [NAS]    I [UE 0] Received NAS_CONN_ESTABLI_CNF: errCode 1, length 68
-[NAS]    I Received PDU Session Establishment Accept, UE IPv4: 10.45.1.192
+[NAS]    I Received PDU Session Establishment Accept, UE IPv4: 10.45.2.30
+[MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
 [SDAP]   I UE 0 PDU session 1: cached QFI 1
 [SDAP]   I UE 0 PDU session 1: bringing TUN oaitun_ue1 up
 [UTIL]   I threadCreate() for ue_tun_read_0_p1: creating thread with affinity ffffffff, priority 1
-[OIP]    A TUN Interface oaitun_ue1 successfully configured, IPv4 10.45.1.192, IPv6 (null)
-[NR_MAC] I [151.7] Received TA_COMMAND 30 TAGID 0 CC_id 0 
+[OIP]    A TUN Interface oaitun_ue1 successfully configured, IPv4 10.45.2.30, IPv6 (null)
+[NR_MAC] I [149.7] Received TA_COMMAND 30 TAGID 0 CC_id 0 
 [NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 21/1
+    DL harq: 17/0
+    UL harq: 9/0 avg code rate 0.9, avg bit/symbol 4.8, avg per TB: (nb RBs 7.7, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
+    DL harq: 17/0
+    UL harq: 9/0 avg code rate 0.9, avg bit/symbol 4.8, avg per TB: (nb RBs 7.7, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
+    DL harq: 18/0
     UL harq: 10/0 avg code rate 0.9, avg bit/symbol 4.9, avg per TB: (nb RBs 7.5, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 22/1
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
+    DL harq: 18/0
+    UL harq: 10/0 avg code rate 0.9, avg bit/symbol 4.9, avg per TB: (nb RBs 7.5, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
+    DL harq: 19/0
     UL harq: 11/0 avg code rate 0.9, avg bit/symbol 5.0, avg per TB: (nb RBs 7.4, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 22/1
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
+    DL harq: 19/0
     UL harq: 11/0 avg code rate 0.9, avg bit/symbol 5.0, avg per TB: (nb RBs 7.4, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 22/1
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
+    DL harq: 19/0
     UL harq: 11/0 avg code rate 0.9, avg bit/symbol 5.0, avg per TB: (nb RBs 7.4, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
+    DL harq: 19/0
+    UL harq: 11/0 avg code rate 0.9, avg bit/symbol 5.0, avg per TB: (nb RBs 7.4, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
+    DL harq: 19/0
+    UL harq: 11/0 avg code rate 0.9, avg bit/symbol 5.0, avg per TB: (nb RBs 7.4, nb symbols 14.0)
+[NR_MAC] I [360.6] Received TA_COMMAND 32 TAGID 0 CC_id 0 
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
+    DL harq: 21/0
+    UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
+    DL harq: 21/0
+    UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
+[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
+    DL harq: 21/0
+    UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
 [NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 23/1
+    DL harq: 21/0
     UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
 [NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 23/1
+    DL harq: 21/0
     UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 23/1
-    UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 23/1
-    UL harq: 12/0 avg code rate 0.9, avg bit/symbol 5.1, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 24/1
-    UL harq: 13/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.2, nb symbols 14.0)
-[NR_MAC] I [304.6] Received TA_COMMAND 32 TAGID 0 CC_id 0 
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 26/1
-    UL harq: 14/0 avg code rate 0.9, avg bit/symbol 5.2, avg per TB: (nb RBs 7.1, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 384.4, cumulated bad DCI 0
-    DL harq: 27/1
-    UL harq: 15/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 7.0, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 512.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 640.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 768.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 896.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 0.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 128.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
-[NR_MAC] I UE 0 RNTI 4601 stats sfn: 256.4, cumulated bad DCI 0
-    DL harq: 28/1
-    UL harq: 16/0 avg code rate 0.9, avg bit/symbol 5.3, avg per TB: (nb RBs 6.9, nb symbols 14.0)
 ^CPress ^C again to trigger immediate shutdown
 [NAS]    I [UE 0] Received NAS_DEREGISTRATION_REQ
-mac 5a 87 94 c2 
-[NAS]    I [UE 0] Received NAS_DOWNLINK_DATA_IND type FGS_DEREGISTRATION_ACCEPT_UE_ORIGINATING with length 10
-[NAS]    I received deregistration accept
-[NR_RRC] I [UE 0] Received RRC Release (gNB 0)
-[PDCP]   I release DRB 1 of UE 0
-[SDAP]   I UE 0 PDU session 1: bringing TUN oaitun_ue1 down
-[UTIL]   I Interface oaitun_ue1 is now down.
-[RLC]    I Released RLC entity: ue_id=0, lc_id=1
-[RLC]    I Released RLC entity: ue_id=0, lc_id=2
-[RLC]    I Released RLC entity: ue_id=0, lc_id=4
-[NR_RRC] I RRC moved into IDLE state
-[NAS]    I [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
-[NR_MAC] A Received detach indication
+mac b7 41 c8 63 
 [NR_PHY] W Returned from ITTI signal handler
-[NR_PHY] W UE main thread is ending
-Bye.
